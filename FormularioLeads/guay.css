@@ -45,18 +45,6 @@ select {
     padding-bottom: 24px;
 }
 
-#donar {
+.botonDonar:hover #donar{
     filter: invert(100%);
-}
-
-#donar:hover {
-    filter: invert(0%);
-}
-
-/* No funciona */
-
-.botonDonar:hover {
-    #donar {
-        filter: invert(0%);
-    }
 }
