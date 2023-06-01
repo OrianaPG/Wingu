@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>wingu</title>
+        <title>Realizá tu donación con Wingu!</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -15,51 +15,90 @@
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel="stylesheet" href="guay.css">
         <link rel="stylesheet" href="normalize.css">
+        <link rel="shortcut icon" href="https://winguweb.org/wp-content/uploads/2022/09/cropped-favicon-32x32.png" type="image/x-icon">
     </head>
 
     <body class="--bs-black">
-        <div class="container">
-            <div class="titulo">
-                <h1>Donacion Para Wingu</h1>
-                <a href="https://winguweb.org/" target="_blank"><img
-                        src="https://winguweb.org/wp-content/uploads/2022/09/Logo-horizontal.svg"
-                        alt="imagen wingu"></a>
 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="container">
+                    <a class="navbar-brand" href="https://winguweb.org/">
+                        <img src="https://winguweb.org/wp-content/uploads/2022/09/Logo-horizontal.svg" alt="Wingu" width="300" height="32">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://winguweb.org">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Donaciones</a>
+                        </li>
+                    
+                </div>
             </div>
+        </nav>
+
+        <div class="container">
+
+            <h1>Donaciones</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ducimus officiis possimus et ratione. Sequi suscipit animi repudiandae rerum cum, iste quasi impedit, hic eaque nostrum odit optio dignissimos blanditiis!
+            </p>
 
             <form>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Muchas gracias por contribuir a esta noble causa.</div>
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Juana">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Fernández">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="apellido">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="juanafernandez@email.com" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresá tu mail para recibir información acerca de tu donación</div>
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="tel" placeholder="1123456789">
+                </div>
+                <div class="mb-3">
+                    <label for="donacion">Tipo de donación</label>
+                    <select class="form-select" aria-label="Tipo de donación" id="donacion">
+                        <option hidden value="">Voy a donar...</option>
+                        <option value="Ropa">Ropa</option>
+                        <option value="Juguete">Juguetes</option>
+                        <option value="Alimento">Alimentos</option>
+                        <option value="Dinero">Dinero</option>
+                    </select>
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Acepto recibir informacion acerca de mi
-                        donacion.</label>
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label" for="check">Acepto ser contactadx para confirmar mi donación</label>
                 </div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Tipo de donacion</option>
-                    <option value="1">Ropa</option>
-                    <option value="2">Juguete</option>
-                    <option value="3">Alimentos</option>
-                    <option value="3">Dinero</option>
-                </select>
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARJJREFUSEvllVERwjAQRLcOQAIKAAWAEsABDgAHOAAngANQgARwALOdHBOSSy9pp1/cT2eSdN9dZret0HNVPeujBDAAcHYNLQC8cprLBYj4xIneAGRBcgEnAMugY66trSlyAJq46JoQC7ADsDW63APgObWaACsAR+sK3D6vitNElQKUiIuoCtEAdArtSOeUFG1LZ9Fh3woBbcVFMIL4AHb8UDq/A5i7YG2c0sGduwAYB2MSMpIg+gCOFh7muxybQloRLOn296k15UIOYNjwWeDUT4XMqevUp1z09l5q8nmYk0gvB0CWZkHNyq0BISSVk04AgfCZSnhngBW8PwIwWDPrPoL9q0v8z7L1PyhkxMd7B3wAWAM0GfafD6AAAAAASUVORK5CYII=" />
-
+                <button type="submit" class="btn btn-outline-light botonDonar">Donar
+                    <img id="donar" src="/Recursos/bx-donate-heart.svg"></img>
+                </button>
             </form>
+
+            <h2>Quiénes somos</h2>
+            <p>En Wingu potenciamos el impacto de proyectos e iniciativas sociales,
+                impulsando su transformación y resiliencia digital mediante la capacitación e
+                implementación de desarrollos tecnológicos innovadores.</p>
         </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     </body>
 
 </html>
