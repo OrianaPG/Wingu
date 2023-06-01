@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+/* utilidades */
+:root {
+    --ColorPrimario: #fff;
+    --fuentePrincipal: 'Inter Tight', sans-serif;
+    --fuenteSecundaria: 'IBM Plex Sans', sans-serif;
+}
+
+/* globales */
+h1,
+h2,
+h3 {
+    color: #fff;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+}
+
+p {
+    color: #fff;
+
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    background: linear-gradient(270deg, rgba(1, 3, 169, 1) 35%, rgba(1, 91, 253, 1) 100%);
+}
+
+/* formulario */
+.titulo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.titulo img {
+    width: 20%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.titulo h1 {
+    display: inline;
+    margin-right: 20px;
+}
+
+form {
+    margin-top: 61px;
+    font-family: var(--fuenteSecundaria);
+    padding: 20px;
+}
+
+.form-text {
+    color: #fff;
+}
+
+label {
+    color: #fff;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+select {
+    padding-bottom: 20px;
+}
+
+.logocasa {
+    margin-left: 0px;
+}
