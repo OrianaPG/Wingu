@@ -8,6 +8,10 @@
     --fuenteSecundaria: 'IBM Plex Sans', sans-serif;
 }
 
+html {
+    height: 100vh;
+}
+
 h1,
 h2,
 h3 {
@@ -45,6 +49,18 @@ select {
     padding-bottom: 24px;
 }
 
+.btn {
+    font-family: var(--fuentePrincipal);
+}
+
 .botonDonar:hover #donar{
     filter: invert(100%);
+}
+
+#agradecimiento {
+    display: flex;
+    height: 75vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
 }
