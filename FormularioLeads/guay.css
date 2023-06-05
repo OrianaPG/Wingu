@@ -14,7 +14,10 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     color: #fff;
     font-family: var(--fuentePrincipal);
     font-weight: bold;
@@ -57,7 +60,7 @@ select {
     transition: .15s ease-in-out;
 }
 
-.botonDonar:hover #donar{
+.botonDonar:hover #donar {
     filter: invert(100%);
     transition: .15s ease-in-out;
 }
@@ -68,8 +71,40 @@ select {
 
 #agradecimiento {
     display: flex;
-    height: 75vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
     padding-top: 24px;
+}
+
+.textoAgradecimiento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+botonesDonaciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.redSocial {
+    list-style: none;
+}
+
+hr {
+    color: #fff;
+}
+
+.copyright {
+    font-weight: 100;
 }
