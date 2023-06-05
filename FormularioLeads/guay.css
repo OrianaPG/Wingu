@@ -62,7 +62,7 @@ select {
     transition: .15s ease-in-out;
 }
 
-#donaciones, #donaciones2 {
+#donaciones {
     width: 20rem;
 }
 
