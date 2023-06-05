@@ -3,14 +3,15 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-type" content="text/html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Realizá tu donación con Wingu!</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel="stylesheet" href="guay.css">
         <link rel="stylesheet" href="normalize.css">
-        <link rel="shortcut icon" href="https://winguweb.org/wp-content/uploads/2022/09/cropped-favicon-32x32.png" type="image/x-icon">
+        <link rel="shortcut icon" href="https://winguweb.org/wp-content/uploads/2022/09/cropped-favicon-32x32.png"
+            type="image/x-icon">
     </head>
 
     <body class="--bs-black">
@@ -20,12 +21,14 @@
 
                 <div class="container">
                     <a class="navbar-brand" href="https://winguweb.org/">
-                        <img src="https://winguweb.org/wp-content/uploads/2022/09/Logo-horizontal.svg" alt="Wingu" width="300" height="32">
+                        <img src="https://winguweb.org/wp-content/uploads/2022/09/Logo-horizontal.svg" alt="Wingu"
+                            width="300" height="32">
                     </a>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -47,45 +50,54 @@
             <img src="https://i.imgur.com/UFNsfAG.png" alt="Donaciones" id="donaciones">
 
             <p>
-                Desde Wingu potenciamos el impacto de proyectos e iniciativas sociales, impulsando su transformación y resiliencia
+                Desde Wingu potenciamos el impacto de proyectos e iniciativas sociales, impulsando su transformación y
+                resiliencia
                 digital mediante la capacitación e implementación de desarrollos tecnológicos innovadores.
             </p>
             <p>
-                Queremos consolidar la cultura digital y la tecnología como agentes clave del cambio social en América Latina.
+                Queremos consolidar la cultura digital y la tecnología como agentes clave del cambio social en América
+                Latina.
                 <b>¿Tenemos tu apoyo?</b>
             </p>
 
-            <form>
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+                <input type=hidden name="oid" value="00DDp0000017mx8">
+                <input type=hidden name="retURL" value="https://wingu.vercel.app/gracias.html">
 
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Juana">
+                    <label for="first_name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="first_name" maxlength="40" name="first_name" size="20"
+                        placeholder="Juana">
                 </div>
 
                 <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Fernández">
+                    <label for="last_name" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="last_name" maxlength="80" name="last_name" size="20"
+                        placeholder="Fernández">
                 </div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="juanafernandez@email.com" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Ingresá tu mail para recibir información acerca de tu donación</div>
+                    <input type="text" class="form-control" id="email" maxlength="80" name="email" size="20" placeholder="juanafernandez@email.com"
+                        aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Ingresá tu mail para recibir información acerca de tu donación
+                    </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="number" class="form-control" id="tel" placeholder="1123456789">
+                    <input type="text" class="form-control" id="phone" maxlength="40" name="phone" size="20" placeholder="1123456789">
                 </div>
 
                 <div class="mb-3">
                     <label for="donacion">Tipo de donación</label>
-                    <select class="form-select" aria-label="Tipo de donación" id="donacion">
+                    <select class="form-select" aria-label="Tipo de donación" id="00NDp00000DNumP" name="00NDp00000DNumP" title="Tipo de donación">
                         <option hidden value="">Voy a donar...</option>
-                        <option value="Ropa">Ropa</option>
-                        <option value="Juguete">Juguetes</option>
-                        <option value="Alimento">Alimentos</option>
+                        <option value="Comida">Comida</option>
                         <option value="Dinero">Dinero</option>
+                        <option value="Juguetes">Juguetes</option>
+                        <option value="Ropa">Ropa</option>
                     </select>
                 </div>
 
@@ -94,7 +106,7 @@
                     <label class="form-check-label" for="check">Acepto ser contactadx para confirmar mi donación</label>
                 </div>
 
-                <button type="submit" class="btn btn-outline-light botonDonar" onclick="window.location.href='https://wingu.vercel.app/gracias.html'">Donar
+                <button type="submit" class="btn btn-outline-light botonDonar" name="submit">Donar
                     <svg xmlns="http://www.w3.org/2000/svg" id="donar" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="white"
                             d="M4 21h9.62a3.995 3.995 0 0 0 3.037-1.397l5.102-5.952a1 1 0 0 0-.442-1.6l-1.968-.656a3.043 3.043 0 0 0-2.823.503l-3.185 2.547-.617-1.235A3.98 3.98 0 0 0 9.146 11H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h5.146c.763 0 1.448.423 1.789 1.105l.447.895H7v2h6.014a.996.996 0 0 0 .442-.11l.003-.001.004-.002h.003l.002-.001h.004l.001-.001c.009.003.003-.001.003-.001.01 0 .002-.001.002-.001h.001l.002-.001.003-.001.002-.001.002-.001.003-.001.002-.001c.003 0 .001-.001.002-.001l.003-.002.002-.001.002-.001.003-.001.002-.001h.001l.002-.001h.001l.002-.001.002-.001c.009-.001.003-.001.003-.001l.002-.001a.915.915 0 0 0 .11-.078l4.146-3.317c.262-.208.623-.273.94-.167l.557.186-4.133 4.823a2.029 2.029 0 0 1-1.52.688H4v-6zM16 2h-.017c-.163.002-1.006.039-1.983.705-.951-.648-1.774-.7-1.968-.704L12.002 2h-.004c-.801 0-1.555.313-2.119.878C9.313 3.445 9 4.198 9 5s.313 1.555.861 2.104l3.414 3.586a1.006 1.006 0 0 0 1.45-.001l3.396-3.568C18.688 6.555 19 5.802 19 5s-.313-1.555-.878-2.121A2.978 2.978 0 0 0 16.002 2H16zm1 3c0 .267-.104.518-.311.725L14 8.55l-2.707-2.843C11.104 5.518 11 5.267 11 5s.104-.518.294-.708A.977.977 0 0 1 11.979 4c.025.001.502.032 1.067.485.081.065.163.139.247.222l.707.707.707-.707c.084-.083.166-.157.247-.222.529-.425.976-.478 1.052-.484a.987.987 0 0 1 .701.292c.189.189.293.44.293.707z" />
@@ -108,7 +120,7 @@
                 Somos una organización sin fines de lucro de innovación y tecnología cívica.
             </p>
             <p>
-                Desde 2008 hicimos un largo recorrido que contamos con orgullo y en el que 
+                Desde 2008 hicimos un largo recorrido que contamos con orgullo y en el que
                 fuimos forjando los valores que nos definen y determinan.
             </p>
 
@@ -116,9 +128,9 @@
 
         </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
 
     </body>
 
