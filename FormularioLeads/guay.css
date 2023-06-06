@@ -67,6 +67,13 @@ select {
 
 #donaciones {
     width: 20rem;
+    margin-bottom: 8px;
+}
+
+.containerDonaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #agradecimiento {
@@ -75,6 +82,17 @@ select {
     align-items: center;
     justify-content: center;
     padding-top: 24px;
+}
+
+@media (max-width: 779px) {
+    #agradecimiento {
+            height: 120vh;
+    }
+    .columnaCarousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .textoAgradecimiento {
