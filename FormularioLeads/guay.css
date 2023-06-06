@@ -12,12 +12,7 @@ html {
     height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     color: #fff;
     font-family: var(--fuentePrincipal);
     font-weight: bold;
@@ -84,6 +79,10 @@ select {
     padding-top: 24px;
 }
 
+.columnaCarousel {
+    padding-top: 121px;
+}
+
 @media (max-width: 779px) {
     #agradecimiento {
             height: 120vh;
@@ -99,11 +98,6 @@ select {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-}
-
-botonesDonaciones {
-    display: flex;
     flex-direction: column;
 }
 
@@ -125,4 +119,11 @@ hr {
 
 .copyright {
     font-weight: 100;
+}
+/* footer */
+.footer_gracias{
+    padding-top: 170px;
+}
+.footer_index {
+    padding-top: 70px;
 }
